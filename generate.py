@@ -1,3 +1,4 @@
+#this script generates the file names
 from os import system
 
 for t in ["1"]:
