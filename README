@@ -1,0 +1,41 @@
+This is the main directory for the 2D Hubbard benchmark data.
+
+look at ../Benchmarks.pdf for a description of the physics
+
+The data is in three main directories:
+
+t1_tprime0.2 for t=1, t'=0.2
+t1_tprime-0.2 for t=1, t'=-0.2
+t1_tprime0 for t=1, t'=0
+
+these directories contain folders with the name
+
+tL_tprimeM_UN_nO_TP
+
+with 
+L the hopping parameter t
+M the next-nearest hopping parameter t'
+N the interaction strength U
+O the density n
+P the temperature T
+...as described in ../Benchmarks.pdf
+
+
+Inside these directories are data from different methods, named after the observable and technique
+
+E_technique.dat
+D_technique.dat
+M_techniqe.dat
+Delta_technique.dat
+
+where technique describes the technique used to generate the data. For example:
+
+technique=DMET: Density Matrix Embedding Theory data
+technique=DCA: Dynamical Cluster Approximation data
+technique=NLCE: Numerical linked cluster data
+
+All data is given as:
+n \Delta n O \delta O
+
+where n is the density, \Delta n the error on the density (zero for canonical methods, but non-zero for grand-canonical methods), O is the value of an observable, and \delta O is the error on O.
+
