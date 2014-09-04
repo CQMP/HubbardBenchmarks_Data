@@ -39,3 +39,5 @@ n \Delta n O \delta O
 
 where n is the density, \Delta n the error on the density (zero for canonical methods, but non-zero for grand-canonical methods), O is the value of an observable, and \delta O is the error on O.
 
+
+generate_directories.py generates all directories of the benchmark plots with the right file name
