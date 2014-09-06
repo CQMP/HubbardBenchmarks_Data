@@ -36,11 +36,20 @@ technique=DMET: Density Matrix Embedding Theory data
 technique=DCA: Dynamical Cluster Approximation data
 technique=NLCE: Numerical linked cluster data
 
+and O the observale, in particular:
+
+E the Energy
+D the Double Occupancy
+M the magnetization 
+Delta the superconducting order parameter
+
 All data is given as:
 n \Delta n O \delta O
 
 where n is the density, \Delta n the error on the density (zero for canonical methods, but non-zero for grand-canonical methods), O is the value of an observable, and \delta O is the error on O.
 
-
 generate_directories.py is a python script that generates all directories of the benchmark points with the right file name. Please use this to create the directories to put the data in, as git does NOT allow to store empty directories.
+
+In the case of results generated on finite systems, additional files should be created, so that extrapolations to the infinite system size can be reproduced. Filenames are:
+E_technique_sizeLxL.dat, D_technique_sizeLxL.dat, etc.
 
