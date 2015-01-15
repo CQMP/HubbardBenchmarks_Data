@@ -53,3 +53,20 @@ generate_directories.py is a python script that generates all directories of the
 In the case of results generated on finite systems, additional files should be created, so that extrapolations to the infinite system size can be reproduced. Filenames are:
 E_technique_sizeLxL.dat, D_technique_sizeLxL.dat, etc.
 
+-------------------
+Diagrammatic Monte Carlo File descriptions
+*************************************************
+FILE NAME:   X_DiagMC_GGam
+FORMAT:      n, err_n, mu, err_mu, X, err_X
+EXPLANATION: results of G-Gamma series; simulated at fixed n; X= E or D
+
+FILE NAME:   X_DiagMC_G0U-G0Gam0
+FORMAT:      n, mu, err_mu, X, err_X
+EXPLANATION: extrapolated by results of G0-U and G0-Gamma0 series simulated at fixed \mu
+
+--------------------
+
+
+
+
+
