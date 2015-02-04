@@ -1,9 +1,1 @@
-# twist averaged boundary up to system size 20*20
-# extrapolated to thermodynamic limit
 1 0 -0.8603 0.0002 
-
-#Sorella values from literature
-1 0 -0.8618 0.0002
-1 0 -0.865996 5e-06
-#the above result should be 
-1 0 -0.85996 0.00005
