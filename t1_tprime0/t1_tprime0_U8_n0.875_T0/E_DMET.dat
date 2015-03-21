@@ -1,3 +1,1 @@
-# 8x2 has a different order than 4x4, and is lower in energy,
-# so TDL extrapolation is done using 2x2, 4x2, 8x2 results
-0.875 1.0e-04 -0.744 5e-3
+0.875 1.0e-04 -0.743538339058 4.8e-03
