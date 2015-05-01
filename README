@@ -1,8 +1,6 @@
 This is the main directory for the 2D Hubbard benchmark data.
 
-If you get stuck at any point please do not hesitate to contact egull@umich.edu or jamesleb@umich.edu
-
-look at ../Benchmarks.pdf for a description of the physics
+If you get stuck at any point please do not hesitate to contact egull@umich.edu or jamesleb@umich.edu (alternately jpfleblanc@gmail.com)
 
 The data is in three main directories:
 
@@ -20,7 +18,6 @@ M the next-nearest hopping parameter t'
 N the interaction strength U
 O the density n
 P the temperature T
-...as described in ../Benchmarks.pdf
 
 
 Inside these directories are data from different methods, named after the observable and technique
@@ -30,11 +27,20 @@ D_technique.dat
 M_techniqe.dat
 Delta_technique.dat
 
-where technique describes the technique used to generate the data. For example:
+where technique describes the technique used to generate the data. 
 
-technique=DMET: Density Matrix Embedding Theory data
-technique=DCA: Dynamical Cluster Approximation data
-technique=NLCE: Numerical linked cluster data
+Technique List:
+-------------
+DMET: Density Matrix Embedding Theory data
+DCA: Dynamical Cluster Approximation data
+VMC: Fixed Node, Diffusion Monte Carlo
+AFQMC: Auxilliary Field Quantum Monte Carlo
+MRPHF: Multi-reference projected Hartree Fock
+UCCSD: Unrestricted coupled cluster, singles and doubles
+DF: Dual Fermions
+DMRG: Density matrix renormalization group
+DiagMC: Diagrammatic Monte Carlo
+--------------
 
 and O the observale, in particular:
 
@@ -46,12 +52,14 @@ Delta the superconducting order parameter
 All data is given as:
 n \Delta_n mu O \delta_O
 
-where n is the density, \Delta_n the error on the density (zero for canonical methods, but non-zero for grand-canonical methods), O is the value of an observable, and \delta_O is the error on O, and mu is the chemical potential used to produce the given filling.  As a convention we will use is mu=0 to correspond to half filling, and ignore any Hartree shift in the chemical potential.  We may revise this if more techniques use a different convention.
+where n is the density, \Delta_n the error on the density (zero for canonical methods, but non-zero for grand-canonical methods), O is the value of an observable, and \delta_O is the error on O, and mu is the chemical potential used to produce the given filling.  As a convention we will use is mu=0 to correspond to half filling, and ignore any Hartree shift in the chemical potential. 
 
-generate_directories.py is a python script that generates all directories of the benchmark points with the right file name. Please use this to create the directories to put the data in, as git does NOT allow to store empty directories.
 
-In the case of results generated on finite systems, additional files should be created, so that extrapolations to the infinite system size can be reproduced. Filenames are:
+
+In the case of results generated on finite systems, additional files should be present, so that extrapolations to the infinite system size can be reproduced. Filenames are:
 E_technique_sizeLxL.dat, D_technique_sizeLxL.dat, etc.
+or
+E_technique_sizeN.dat, D_technique_sizeN.dat, etc.
 
 -------------------
 Diagrammatic Monte Carlo File descriptions
