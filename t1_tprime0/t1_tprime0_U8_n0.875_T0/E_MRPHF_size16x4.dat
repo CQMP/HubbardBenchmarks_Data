@@ -1,2 +1,7 @@
+# published [ 80 dets ]
 0.875 0 -0.7094 0.0005 # (extrapolated)
 #0.875 0 -0.70073 0 # (variational)
+
+# improved [ 96 dets ]
+#0.875 0 -0.7107 0.0003 # (extrapolated)
+#0.875 0 -0.70220 0 # (variational)
