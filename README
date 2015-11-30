@@ -1,5 +1,7 @@
 This is the main directory for the 2D Hubbard benchmark data.
 
+This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+
 If you get stuck at any point please do not hesitate to contact egull@umich.edu or jamesleb@umich.edu (alternately jpfleblanc@gmail.com)
 
 The data is in three main directories:
@@ -73,8 +75,3 @@ FORMAT:      n, mu, err_mu, X, err_X
 EXPLANATION: extrapolated by results of G0-U and G0-Gamma0 series simulated at fixed \mu
 
 --------------------
-
-
-
-
-
