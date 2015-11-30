@@ -1,0 +1,80 @@
+This is the main directory for the 2D Hubbard benchmark data.
+
+If you get stuck at any point please do not hesitate to contact egull@umich.edu or jamesleb@umich.edu (alternately jpfleblanc@gmail.com)
+
+The data is in three main directories:
+
+t1_tprime0.2 for t=1, t'=0.2
+t1_tprime-0.2 for t=1, t'=-0.2
+t1_tprime0 for t=1, t'=0
+
+these directories contain folders with the name
+
+tL_tprimeM_UN_nO_TP
+
+with 
+L the hopping parameter t
+M the next-nearest hopping parameter t'
+N the interaction strength U
+O the density n
+P the temperature T
+
+
+Inside these directories are data from different methods, named after the observable and technique
+
+E_technique.dat
+D_technique.dat
+M_techniqe.dat
+Delta_technique.dat
+
+where technique describes the technique used to generate the data. 
+
+Technique List:
+-------------
+DMET: Density Matrix Embedding Theory data
+DCA: Dynamical Cluster Approximation data
+VMC: Fixed Node, Diffusion Monte Carlo
+AFQMC: Auxilliary Field Quantum Monte Carlo
+MRPHF: Multi-reference projected Hartree Fock
+UCCSD: Unrestricted coupled cluster, singles and doubles
+DF: Dual Fermions
+DMRG: Density matrix renormalization group
+DiagMC: Diagrammatic Monte Carlo
+--------------
+
+and O the observale, in particular:
+
+E the Energy
+D the Double Occupancy
+M the magnetization 
+Delta the superconducting order parameter
+
+All data is given as:
+n \Delta_n mu O \delta_O
+
+where n is the density, \Delta_n the error on the density (zero for canonical methods, but non-zero for grand-canonical methods), O is the value of an observable, and \delta_O is the error on O, and mu is the chemical potential used to produce the given filling.  As a convention we will use is mu=0 to correspond to half filling, and ignore any Hartree shift in the chemical potential. 
+
+
+
+In the case of results generated on finite systems, additional files should be present, so that extrapolations to the infinite system size can be reproduced. Filenames are:
+E_technique_sizeLxL.dat, D_technique_sizeLxL.dat, etc.
+or
+E_technique_sizeN.dat, D_technique_sizeN.dat, etc.
+
+-------------------
+Diagrammatic Monte Carlo File descriptions
+*************************************************
+FILE NAME:   X_DiagMC_GGam
+FORMAT:      n, err_n, mu, err_mu, X, err_X
+EXPLANATION: results of G-Gamma series; simulated at fixed n; X= E or D
+
+FILE NAME:   X_DiagMC_G0U-G0Gam0
+FORMAT:      n, mu, err_mu, X, err_X
+EXPLANATION: extrapolated by results of G0-U and G0-Gamma0 series simulated at fixed \mu
+
+--------------------
+
+
+
+
+
